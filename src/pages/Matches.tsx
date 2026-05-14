@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { EmbeddedScene, SceneFlexLayout, SceneFlexItem, SceneReactObject, SceneVariableSet, CustomVariable } from '@grafana/scenes';
 import { PluginPage } from '@grafana/runtime';
 import { useStyles2, Select, Badge, Spinner } from '@grafana/ui';
 import { GrafanaTheme2, SelectableValue } from '@grafana/data';
