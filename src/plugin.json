@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "app",
+  "name": "World Cup 2026",
+  "id": "paulbarnett-worldcup-app",
+  "info": {
+    "keywords": ["world cup", "football", "soccer", "2026"],
+    "description": "FIFA World Cup 2026 — matches, teams, players, bracket",
+    "author": { "name": "Paul Barnett" },
+    "logos": { "small": "img/logo.svg", "large": "img/logo.svg" },
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "includes": [
+    {
+      "type": "page", "name": "Matches",
+      "path": "/a/%PLUGIN_ID%/matches",
+      "addToNav": true, "defaultNav": true,
+      "icon": "calendar-alt"
+    },
+    {
+      "type": "page", "name": "Teams",
+      "path": "/a/%PLUGIN_ID%/teams",
+      "addToNav": true, "defaultNav": false,
+      "icon": "users-alt"
+    },
+    {
+      "type": "page", "name": "Players",
+      "path": "/a/%PLUGIN_ID%/players",
+      "addToNav": true, "defaultNav": false,
+      "icon": "user"
+    },
+    {
+      "type": "page", "name": "Bracket",
+      "path": "/a/%PLUGIN_ID%/bracket",
+      "addToNav": true, "defaultNav": false,
+      "icon": "sitemap"
+    },
+    {
+      "type": "page", "icon": "cog", "name": "Configuration",
+      "path": "/plugins/%PLUGIN_ID%",
+      "role": "Admin", "addToNav": true
+    }
+  ],
+  "dependencies": {
+    "grafanaDependency": ">=11.0.0",
+    "plugins": []
+  }
+}
