@@ -4,43 +4,73 @@
   "name": "World Cup 2026",
   "id": "paulbarnett-worldcup-app",
   "info": {
-    "keywords": ["world cup", "football", "soccer", "2026"],
-    "description": "FIFA World Cup 2026 — matches, teams, players, bracket",
-    "author": { "name": "Paul Barnett" },
-    "logos": { "small": "img/logo.svg", "large": "img/logo.svg" },
-    "screenshots": [],
+    "keywords": [
+      "world cup",
+      "football",
+      "soccer",
+      "2026"
+    ],
+    "description": "FIFA World Cup 2026 \u2014 matches, teams, players, bracket",
+    "author": {
+      "name": "Paul Barnett"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "screenshots": [
+      {
+        "name": "Matches \u2013 live scores and schedule",
+        "path": "img/screenshot-matches.png"
+      },
+      {
+        "name": "Teams \u2013 group standings",
+        "path": "img/screenshot-standings.png"
+      }
+    ],
     "version": "%VERSION%",
     "updated": "%TODAY%"
   },
   "includes": [
     {
-      "type": "page", "name": "Matches",
+      "type": "page",
+      "name": "Matches",
       "path": "/a/%PLUGIN_ID%/matches",
-      "addToNav": true, "defaultNav": true,
+      "addToNav": true,
+      "defaultNav": true,
       "icon": "calendar-alt"
     },
     {
-      "type": "page", "name": "Teams",
+      "type": "page",
+      "name": "Teams",
       "path": "/a/%PLUGIN_ID%/teams",
-      "addToNav": true, "defaultNav": false,
+      "addToNav": true,
+      "defaultNav": false,
       "icon": "users-alt"
     },
     {
-      "type": "page", "name": "Players",
+      "type": "page",
+      "name": "Players",
       "path": "/a/%PLUGIN_ID%/players",
-      "addToNav": true, "defaultNav": false,
+      "addToNav": true,
+      "defaultNav": false,
       "icon": "user"
     },
     {
-      "type": "page", "name": "Bracket",
+      "type": "page",
+      "name": "Bracket",
       "path": "/a/%PLUGIN_ID%/bracket",
-      "addToNav": true, "defaultNav": false,
+      "addToNav": true,
+      "defaultNav": false,
       "icon": "sitemap"
     },
     {
-      "type": "page", "icon": "cog", "name": "Configuration",
+      "type": "page",
+      "icon": "cog",
+      "name": "Configuration",
       "path": "/plugins/%PLUGIN_ID%",
-      "role": "Admin", "addToNav": true
+      "role": "Admin",
+      "addToNav": true
     }
   ],
   "dependencies": {
