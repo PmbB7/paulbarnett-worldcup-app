@@ -49,8 +49,8 @@ export default function BracketPage() {
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <PluginPage><Spinner /></PluginPage>;
-  if (error) return <PluginPage><div className={styles.error}>{error}</div></PluginPage>;
+  if (loading) {return <PluginPage><Spinner /></PluginPage>;}
+  if (error) {return <PluginPage><div className={styles.error}>{error}</div></PluginPage>;}
 
   const byStage = KNOCKOUT_STAGES.reduce<Record<string, Match[]>>((acc, s) => {
     acc[s] = matches.filter((m) => m.stage === s);
@@ -65,7 +65,7 @@ export default function BracketPage() {
         {!hasKnockout ? (
           <div className={styles.placeholder}>
             <div className={styles.trophy}>🏆</div>
-            <h2>Knockout stage hasn't started yet</h2>
+            <h2>Knockout stage hasn&apos;t started yet</h2>
             <p>Check back once the group stage is complete.</p>
           </div>
         ) : (

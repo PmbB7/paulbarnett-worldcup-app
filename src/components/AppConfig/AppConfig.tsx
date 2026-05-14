@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { AppPluginMeta, PluginConfigPageProps } from "@grafana/data";
+import { AppPluginMeta, GrafanaTheme2, PluginConfigPageProps } from '@grafana/data';
 export type AppConfigProps = PluginConfigPageProps<AppPluginMeta>;
 import { PluginPage } from '@grafana/runtime';
 import { Field, Input, Button, useStyles2, Alert } from '@grafana/ui';
-import { GrafanaTheme2 } from '@grafana/data';
 import { css } from '@emotion/css';
 import { setApiKey, getApiKey } from '../../api/footballApi';
 

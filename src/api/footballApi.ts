@@ -66,8 +66,8 @@ export async function getMatches(matchday?: number): Promise<Match[]> {
   return data.matches;
 }
 
-export async function getStandings(): Promise<{ stage: string; group: string; table: Standing[] }[]> {
-  const data = await apiFetch<{ standings: { stage: string; group: string; table: Standing[] }[] }>(
+export async function getStandings(): Promise<Array<{ stage: string; group: string; table: Standing[] }>> {
+  const data = await apiFetch<{ standings: Array<{ stage: string; group: string; table: Standing[] }> }>(
     `/competitions/${WC_COMPETITION}/standings`
   );
   return data.standings;

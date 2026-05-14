@@ -71,7 +71,7 @@ export default function TeamsPage() {
     grid: css`display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: ${t.spacing(3)};`,
   }));
 
-  const [standings, setStandings] = useState<{ stage: string; group: string; table: Standing[] }[]>([]);
+  const [standings, setStandings] = useState<Array<{ stage: string; group: string; table: Standing[] }>>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
